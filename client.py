@@ -1,14 +1,11 @@
 import asyncio
 import httpx
 
-# Import the formal SDK Client components
 from a2a.client import A2ACardResolver
 from agno.client.a2a import A2AClient
 
-# Only import what is natively exposed at the top layer
 from a2a.types import AgentCard
 
-# Set the Target URLs matching your mounted Calculator agent endpoint
 BASE_URL = "http://localhost:9999/agents/calculator"
 PUBLIC_AGENT_CARD_PATH = "/agent-card.json"
 
